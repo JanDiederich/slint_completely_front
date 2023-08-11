@@ -1,0 +1,10 @@
+export component MainWindow inherits Window {
+    in-out property <string> killer_text: "Please wait till the main loop runs";
+    in-out property <color> text_color: black;
+
+    Text {
+        text: killer_text;
+        color: text_color;
+        font-size: 60px;
+    }
+}
