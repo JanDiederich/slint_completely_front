@@ -36,7 +36,6 @@ fn animation_update_timer() {
             if i == 0 {
                 thread::sleep(Duration::from_secs(1));
             }
-            // fast_tick.recv().unwrap();
             thread::sleep(duration);
             slint::invoke_from_event_loop(move || unsafe {
                 main_window().set_killer_text(SharedString::from(bug_text(i)));
